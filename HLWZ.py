@@ -11,8 +11,6 @@ import argparse
 def main():
     # load console args
     parser = argparse.ArgumentParser(description='HLWZ -- The program to show moleculer spectrums.')
-    # parser.add_argument('-c', '--config', type=str, default=None, 
-    #                 help='Config file path. If the config file is given, the parsed args will be ignored.')
     parser.add_argument('--fmin', type=float, default=1050, 
                     help='The min frequency [MHz] to be shown. Default is 1050.')
     parser.add_argument('--fmax', type=float, default=1450, 
@@ -108,7 +106,7 @@ def main():
     
     # cmap settings
     if userainbow:
-        rainbow = cm.get_cmap('rainbow')
+        rainbow = cm.get_cmap('rainbow_r')
         freq_min = df['Freq-MHz(rest frame,redshifted)'].min()
         freq_max = df['Freq-MHz(rest frame,redshifted)'].max()
         color_norm = lambda x: (x - freq_min) / (freq_max - freq_min)

@@ -18,12 +18,11 @@ Homework of FAST Summer Campus 2022
     pipenv shell
     ```
 
-2. Edit the config file `config.yml`
-
-3. Run the program
+2. Run the program
     ```python
-    python main.py
+    python HLWZ.py <args>
     ```
+    Run `python HLWZ.py -h` for help
 
 ## License
 
