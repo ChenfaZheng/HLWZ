@@ -23,6 +23,11 @@ Homework of FAST Summer Campus 2022
     python HLWZ.py <args>
     ```
     Run `python HLWZ.py -h` for help
+    
+The `tkinter` backend is used. An arch user could install `tkinter` by 
+```
+sudo pacman -S tk
+```
 
 ## License
 
